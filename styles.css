@@ -1,0 +1,32 @@
+html {
+    text-align: center;
+}
+
+h3 {
+    border: 1px solid red;
+    max-width: 50%;
+    margin: 4% auto;
+}
+/* Class that will be added to clicked divs. Makes div larger and adds border*/
+.selected {
+    transform: scale(1.1);
+    border-color: yellow;
+    box-shadow: 0 0 1rem #f44262;
+}
+/* Grid container 3x3 */
+#grid {
+    display: grid;
+    min-height: 40vh;
+    max-width: 40%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+
+#grid > div {
+    display: flex;
+    border: 1px solid black;
+    transition: all .11 cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: black;
+}
